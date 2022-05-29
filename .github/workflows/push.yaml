@@ -19,10 +19,8 @@ jobs:
         run: python3 --version
       - name: install dependecies
         run: pip install -r requirements.txt
-      - name: install dependecies
-        run: pip install -r requirements.txt
       - name: run migrations
-        run: python manage.py migrate
+        run: cd django-with-tests && python manage.py migrate
       - name: run app
         run: python manage.py runserver
 
