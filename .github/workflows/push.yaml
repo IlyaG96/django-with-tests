@@ -24,6 +24,6 @@ jobs:
       - name: run migrations
         run: cd django-with-tests && python manage.py migrate
       - name: run app
-        run: python manage.py runserver
+        run: cd django-with-tests && python manage.py runserver
 
 
